@@ -1,1 +1,74 @@
 /* to show your CSS things, you'll likely need to use this file */
+code{
+    display: block;
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+}
+
+meter {
+    width: 90%;
+    height: 20px;
+}
+meter::-webkit-meter-optimum-value {
+    background: red;
+  }
+  meter::-moz-meter-bar { /* Firefox Pseudo Class */
+    background: red;
+  }
+
+#animation, #name {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#name {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@keyframes animation {
+    from {background-color: blue}
+    to {background-color: red}
+  }
+
+#strikethrough {
+text-decoration: line-through;
+font-size: 30px;
+}
+
+#cubic {
+  width: 100px;
+  height: 100px;
+  background: rgb(58, 201, 58);
+  transition: width 2s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, .83, 0.67);
+}
+
+#cubic:hover {
+    width:300px;
+  }
+
+#button {
+    pointer-events:auto;
+    margin: 20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+#button:hover {
+    pointer-events:auto;
+    margin: 20px;
+    background-color: hotpink;
+}
